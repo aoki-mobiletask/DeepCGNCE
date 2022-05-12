@@ -1,0 +1,863 @@
+ [angle terms] index:chainID:ires1:ires2:ires3:res1:res2:res3:bead1:bead2:bead3:energy
+    1    1    1    3    5 PHE  GLN  THR   CA   CA   CA     -4.799
+    3    1    3    5    7 GLN  THR  TRP   CA   CA   CA     -0.799
+    6    1    5    7    9 THR  TRP  GLU   CA   CA   CA     -1.694
+    9    1    7    9   11 TRP  GLU  GLU   CA   CA   CA     -1.346
+   12    1    9   11   13 GLU  GLU  PHE   CA   CA   CA     -2.404
+   15    1   11   13   15 GLU  PHE  SER   CA   CA   CA     -1.860
+   18    1   13   15   17 PHE  SER  ARG   CA   CA   CA     -1.869
+   21    1   15   17   19 SER  ARG  ALA   CA   CA   CA     -1.222
+   24    1   17   19   21 ARG  ALA  ALA   CA   CA   CA     -1.053
+   27    1   19   21   23 ALA  ALA  GLU   CA   CA   CA     -1.199
+   30    1   21   23   25 ALA  GLU  LYS   CA   CA   CA     -1.724
+   33    1   23   25   27 GLU  LYS  LEU   CA   CA   CA     -2.167
+   36    1   25   27   29 LYS  LEU  TYR   CA   CA   CA     -1.523
+   39    1   27   29   31 LEU  TYR  LEU   CA   CA   CA     -1.673
+   42    1   29   31   33 TYR  LEU  ALA   CA   CA   CA     -1.375
+   45    1   31   33   35 LEU  ALA  ASP   CA   CA   CA     -1.125
+   48    1   33   35   37 ALA  ASP  PRO   CA   CA   CA     -1.162
+   51    1   35   37   39 ASP  PRO  MET   CA   CA   CA     -6.677
+   54    1   37   39   41 PRO  MET  LYS   CA   CA   CA     -0.534
+   57    1   39   41   43 MET  LYS  VAL   CA   CA   CA     -0.918
+   60    1   41   43   45 LYS  VAL  ARG   CA   CA   CA     -1.170
+   63    1   43   45   47 VAL  ARG  VAL   CA   CA   CA     -1.533
+   66    1   45   47   49 ARG  VAL  VAL   CA   CA   CA     -2.656
+   69    1   47   49   51 VAL  VAL  LEU   CA   CA   CA     -1.134
+   72    1   49   51   53 VAL  LEU  LYS   CA   CA   CA     -1.468
+   75    1   51   53   55 LEU  LYS  TYR   CA   CA   CA     -0.900
+   78    1   53   55   57 LYS  TYR  ARG   CA   CA   CA     -0.913
+   81    1   55   57   59 TYR  ARG  HIE   CA   CA   CA     -4.091
+   84    1   57   59   61 ARG  HIE  VAL   CA   CA   CA     -3.248
+   87    1   59   61   63 HIE  VAL  ASP   CA   CA   CA     -1.417
+   90    1   61   63   65 VAL  ASP  GLY   CA   CA   CA     -0.947
+   93    1   63   65   66 ASP  GLY  ASN   CA   CA   CA     -2.537
+   96    1   65   66   68 GLY  ASN  LEU   CA   CA   CA     -0.542
+   97    1   66   68   70 ASN  LEU  CYS   CA   CA   CA     -1.068
+  100    1   68   70   72 LEU  CYS  ILE   CA   CA   CA     -1.341
+  103    1   70   72   74 CYS  ILE  LYS   CA   CA   CA     -1.131
+  106    1   72   74   76 ILE  LYS  VAL   CA   CA   CA     -1.364
+  109    1   74   76   78 LYS  VAL  THR   CA   CA   CA     -1.835
+  112    1   76   78   80 VAL  THR  ASP   CA   CA   CA     -0.767
+  115    1   78   80   82 THR  ASP  ASP   CA   CA   CA     -3.303
+  118    1   80   82   84 ASP  ASP  LEU   CA   CA   CA    -10.561
+  121    1   82   84   86 ASP  LEU  VAL   CA   CA   CA     -2.235
+  124    1   84   86   88 LEU  VAL  CYS   CA   CA   CA     -0.688
+  127    1   86   88   90 VAL  CYS  LEU   CA   CA   CA     -1.337
+  130    1   88   90   92 CYS  LEU  VAL   CA   CA   CA     -1.584
+  133    1   90   92   94 LEU  VAL  TYR   CA   CA   CA     -0.636
+  136    1   92   94   96 VAL  TYR  ARG   CA   CA   CA     -2.688
+  139    1   94   96   98 TYR  ARG  THR   CA   CA   CA     -1.605
+  142    1   96   98  100 ARG  THR  ASP   CA   CA   CA     -1.383
+  145    1   98  100  102 THR  ASP  GLN   CA   CA   CA     -1.469
+  148    1  100  102  104 ASP  GLN  ALA   CA   CA   CA     -0.556
+  151    1  102  104  106 GLN  ALA  GLN   CA   CA   CA     -1.473
+  154    1  104  106  108 ALA  GLN  ASP   CA   CA   CA     -0.616
+  157    1  106  108  110 GLN  ASP  VAL   CA   CA   CA     -0.977
+  160    1  108  110  112 ASP  VAL  LYS   CA   CA   CA     -1.955
+  163    1  110  112  114 VAL  LYS  LYS   CA   CA   CA     -2.145
+  166    1  112  114  116 LYS  LYS  ILE   CA   CA   CA     -1.276
+  169    1  114  116  118 LYS  ILE  GLU   CA   CA   CA     -1.518
+  172    1  116  118  120 ILE  GLU  LYS   CA   CA   CA     -1.908
+  175    1  118  120  122 GLU  LYS  PHE   CA   CA   CA     -1.691
+  178    1  120  122  124 LYS  PHE  HIE   CA   CA   CA     -1.293
+  181    1  122  124  126 PHE  HIE  SER   CA   CA   CA     -1.699
+  184    1  124  126  128 HIE  SER  GLN   CA   CA   CA     -1.709
+  187    1  126  128  130 SER  GLN  LEU   CA   CA   CA     -1.409
+  190    1  128  130  132 GLN  LEU  MET   CA   CA   CA     -1.686
+  193    1  130  132  134 LEU  MET  ARG   CA   CA   CA     -2.074
+  196    1  132  134  136 MET  ARG  LEU   CA   CA   CA     -2.127
+  199    1  134  136  138 ARG  LEU  MET   CA   CA   CA     -1.416
+  202    1  136  138  140 LEU  MET  VAL   CA   CA   CA     -1.110
+  205    1  138  140  142 MET  VAL  ALA   CA   CA   CA     -0.926
+  208    1  140  142  144 VAL  ALA  LYS   CA   CA   CA     -0.795
+  211    1  142  144  146 ALA  LYS  GLU   CA   CA   CA     -1.408
+  214    1  144  146  148 LYS  GLU  SER   CA   CA   CA     -0.769
+  217    1  146  148  150 GLU  SER  ARG   CA   CA   CA     -1.502
+  220    1  148  150  152 SER  ARG  ASN   CA   CA   CA     -0.482
+  223    1  150  152  154 ARG  ASN  VAL   CA   CA   CA     -2.428
+ [dihedral terms] index:chainID:ires1:ires2:ires3:ires4:res1:res2:res3:res4:bead1:bead2:bead3:bead4:energy
+    1    1    1    3    5    7 PHE  GLN  THR  TRP   CA   CA   CA   CA     -0.494
+    3    1    3    5    7    9 GLN  THR  TRP  GLU   CA   CA   CA   CA     -0.134
+    5    1    5    7    9   11 THR  TRP  GLU  GLU   CA   CA   CA   CA    -12.761
+    7    1    7    9   11   13 TRP  GLU  GLU  PHE   CA   CA   CA   CA     -8.386
+    9    1    9   11   13   15 GLU  GLU  PHE  SER   CA   CA   CA   CA     -7.065
+   11    1   11   13   15   17 GLU  PHE  SER  ARG   CA   CA   CA   CA     -3.546
+   13    1   13   15   17   19 PHE  SER  ARG  ALA   CA   CA   CA   CA     -4.133
+   15    1   15   17   19   21 SER  ARG  ALA  ALA   CA   CA   CA   CA     -3.153
+   17    1   17   19   21   23 ARG  ALA  ALA  GLU   CA   CA   CA   CA     -3.337
+   19    1   19   21   23   25 ALA  ALA  GLU  LYS   CA   CA   CA   CA     -4.480
+   21    1   21   23   25   27 ALA  GLU  LYS  LEU   CA   CA   CA   CA     -3.792
+   23    1   23   25   27   29 GLU  LYS  LEU  TYR   CA   CA   CA   CA     -5.041
+   25    1   25   27   29   31 LYS  LEU  TYR  LEU   CA   CA   CA   CA     -3.344
+   27    1   27   29   31   33 LEU  TYR  LEU  ALA   CA   CA   CA   CA     -3.848
+   29    1   29   31   33   35 TYR  LEU  ALA  ASP   CA   CA   CA   CA     -2.443
+   31    1   31   33   35   37 LEU  ALA  ASP  PRO   CA   CA   CA   CA     -1.353
+   33    1   33   35   37   39 ALA  ASP  PRO  MET   CA   CA   CA   CA     -0.022
+   35    1   35   37   39   41 ASP  PRO  MET  LYS   CA   CA   CA   CA    -19.659
+   37    1   37   39   41   43 PRO  MET  LYS  VAL   CA   CA   CA   CA     -1.098
+   39    1   39   41   43   45 MET  LYS  VAL  ARG   CA   CA   CA   CA     -0.122
+   41    1   41   43   45   47 LYS  VAL  ARG  VAL   CA   CA   CA   CA     -0.090
+   43    1   43   45   47   49 VAL  ARG  VAL  VAL   CA   CA   CA   CA     -0.118
+   45    1   45   47   49   51 ARG  VAL  VAL  LEU   CA   CA   CA   CA     -0.102
+   47    1   47   49   51   53 VAL  VAL  LEU  LYS   CA   CA   CA   CA     -0.056
+   49    1   49   51   53   55 VAL  LEU  LYS  TYR   CA   CA   CA   CA     -0.042
+   51    1   51   53   55   57 LEU  LYS  TYR  ARG   CA   CA   CA   CA     -0.056
+   53    1   53   55   57   59 LYS  TYR  ARG  HIE   CA   CA   CA   CA     -0.086
+   55    1   55   57   59   61 TYR  ARG  HIE  VAL   CA   CA   CA   CA     -0.116
+   57    1   57   59   61   63 ARG  HIE  VAL  ASP   CA   CA   CA   CA     -8.342
+   59    1   59   61   63   65 HIE  VAL  ASP  GLY   CA   CA   CA   CA     -1.908
+   61    1   61   63   65   66 VAL  ASP  GLY  ASN   CA   CA   CA   CA     -0.125
+   63    1   63   65   66   68 ASP  GLY  ASN  LEU   CA   CA   CA   CA     -0.112
+   65    1   65   66   68   70 GLY  ASN  LEU  CYS   CA   CA   CA   CA     -0.032
+   66    1   66   68   70   72 ASN  LEU  CYS  ILE   CA   CA   CA   CA     -0.044
+   68    1   68   70   72   74 LEU  CYS  ILE  LYS   CA   CA   CA   CA     -0.076
+   70    1   70   72   74   76 CYS  ILE  LYS  VAL   CA   CA   CA   CA     -0.022
+   72    1   72   74   76   78 ILE  LYS  VAL  THR   CA   CA   CA   CA     -0.068
+   74    1   74   76   78   80 LYS  VAL  THR  ASP   CA   CA   CA   CA     -0.244
+   76    1   76   78   80   82 VAL  THR  ASP  ASP   CA   CA   CA   CA     -0.062
+   78    1   78   80   82   84 THR  ASP  ASP  LEU   CA   CA   CA   CA      0.600
+   80    1   80   82   84   86 ASP  ASP  LEU  VAL   CA   CA   CA   CA     -8.120
+   82    1   82   84   86   88 ASP  LEU  VAL  CYS   CA   CA   CA   CA     -0.381
+   84    1   84   86   88   90 LEU  VAL  CYS  LEU   CA   CA   CA   CA     -0.070
+   86    1   86   88   90   92 VAL  CYS  LEU  VAL   CA   CA   CA   CA     -0.046
+   88    1   88   90   92   94 CYS  LEU  VAL  TYR   CA   CA   CA   CA     -0.060
+   90    1   90   92   94   96 LEU  VAL  TYR  ARG   CA   CA   CA   CA     -0.068
+   92    1   92   94   96   98 VAL  TYR  ARG  THR   CA   CA   CA   CA     -0.070
+   94    1   94   96   98  100 TYR  ARG  THR  ASP   CA   CA   CA   CA     -0.044
+   96    1   96   98  100  102 ARG  THR  ASP  GLN   CA   CA   CA   CA     -0.034
+   98    1   98  100  102  104 THR  ASP  GLN  ALA   CA   CA   CA   CA     -0.292
+  100    1  100  102  104  106 ASP  GLN  ALA  GLN   CA   CA   CA   CA     -0.098
+  102    1  102  104  106  108 GLN  ALA  GLN  ASP   CA   CA   CA   CA     -2.961
+  104    1  104  106  108  110 ALA  GLN  ASP  VAL   CA   CA   CA   CA     -3.577
+  106    1  106  108  110  112 GLN  ASP  VAL  LYS   CA   CA   CA   CA     -1.173
+  108    1  108  110  112  114 ASP  VAL  LYS  LYS   CA   CA   CA   CA    -18.747
+  110    1  110  112  114  116 VAL  LYS  LYS  ILE   CA   CA   CA   CA     -4.459
+  112    1  112  114  116  118 LYS  LYS  ILE  GLU   CA   CA   CA   CA     -2.676
+  114    1  114  116  118  120 LYS  ILE  GLU  LYS   CA   CA   CA   CA     -4.015
+  116    1  116  118  120  122 ILE  GLU  LYS  PHE   CA   CA   CA   CA     -3.948
+  118    1  118  120  122  124 GLU  LYS  PHE  HIE   CA   CA   CA   CA     -4.865
+  120    1  120  122  124  126 LYS  PHE  HIE  SER   CA   CA   CA   CA     -3.151
+  122    1  122  124  126  128 PHE  HIE  SER  GLN   CA   CA   CA   CA     -5.404
+  124    1  124  126  128  130 HIE  SER  GLN  LEU   CA   CA   CA   CA     -4.145
+  126    1  126  128  130  132 SER  GLN  LEU  MET   CA   CA   CA   CA     -4.005
+  128    1  128  130  132  134 GLN  LEU  MET  ARG   CA   CA   CA   CA     -7.349
+  130    1  130  132  134  136 LEU  MET  ARG  LEU   CA   CA   CA   CA     -5.295
+  132    1  132  134  136  138 MET  ARG  LEU  MET   CA   CA   CA   CA     -6.019
+  134    1  134  136  138  140 ARG  LEU  MET  VAL   CA   CA   CA   CA     -3.401
+  136    1  136  138  140  142 LEU  MET  VAL  ALA   CA   CA   CA   CA     -1.229
+  138    1  138  140  142  144 MET  VAL  ALA  LYS   CA   CA   CA   CA     -0.134
+  140    1  140  142  144  146 VAL  ALA  LYS  GLU   CA   CA   CA   CA     -0.084
+  142    1  142  144  146  148 ALA  LYS  GLU  SER   CA   CA   CA   CA     -0.032
+  144    1  144  146  148  150 LYS  GLU  SER  ARG   CA   CA   CA   CA     -0.014
+  146    1  146  148  150  152 GLU  SER  ARG  ASN   CA   CA   CA   CA     -0.746
+  148    1  148  150  152  154 SER  ARG  ASN  VAL   CA   CA   CA   CA     -0.050
+ [nlocal contact terms] index:chainID1:chainID2:ires1:ires2:res1:res2:bead1:bead2:energy
+    1    1    1    1   11 PHE  GLU   CA   CA      0.034
+    2    1    1    1   12 PHE  GLU   CA   CB     -0.852
+    3    1    1    1   13 PHE  PHE   CA   CA     -0.152
+    4    1    1    1   14 PHE  PHE   CA   CB     -1.653
+    5    1    1    1   92 PHE  VAL   CA   CA     -0.188
+    6    1    1    1   95 PHE  TYR   CA   CB     -0.044
+    7    1    1    2    6 PHE  THR   CB   CB     -0.145
+    8    1    1    2    7 PHE  TRP   CB   CA     -0.042
+    9    1    1    2   11 PHE  GLU   CB   CA     -0.776
+   10    1    1    2   12 PHE  GLU   CB   CB     -1.332
+   11    1    1    2   13 PHE  PHE   CB   CA      0.006
+   12    1    1    2   14 PHE  PHE   CB   CB     -2.719
+   13    1    1    2   15 PHE  SER   CB   CA      0.030
+   14    1    1    2   19 PHE  ALA   CB   CA      0.008
+   15    1    1    2   20 PHE  ALA   CB   CB     -1.037
+   16    1    1    2   21 PHE  ALA   CB   CA      0.006
+   17    1    1    2   88 PHE  CYS   CB   CA     -0.006
+   18    1    1    2   90 PHE  LEU   CB   CA      0.032
+   19    1    1    2   91 PHE  LEU   CB   CB     -1.588
+   20    1    1    2   92 PHE  VAL   CB   CA     -0.036
+   21    1    1    2   93 PHE  VAL   CB   CB     -0.165
+   22    1    1    2   94 PHE  TYR   CB   CA      0.086
+   23    1    1    2   95 PHE  TYR   CB   CB     -0.639
+   24    1    1    3   11 GLN  GLU   CA   CA      0.038
+   25    1    1    3   12 GLN  GLU   CA   CB     -0.008
+   26    1    1    3   13 GLN  PHE   CA   CA      0.018
+   27    1    1    3   14 GLN  PHE   CA   CB     -0.014
+   28    1    1    3   95 GLN  TYR   CA   CB     -0.008
+   29    1    1    4   12 GLN  GLU   CB   CB     -0.582
+   30    1    1    4   95 GLN  TYR   CB   CB     -0.313
+   31    1    1    5   12 THR  GLU   CA   CB      0.020
+   32    1    1    5   13 THR  PHE   CA   CA     -3.401
+   33    1    1    5   14 THR  PHE   CA   CB      0.017
+   34    1    1    5   15 THR  SER   CA   CA     -0.382
+   35    1    1    5   16 THR  SER   CA   CB      0.036
+   36    1    1    5   95 THR  TYR   CA   CB     -0.006
+   37    1    1    6   10 THR  GLU   CB   CB     -0.839
+   38    1    1    6   11 THR  GLU   CB   CA     -2.099
+   39    1    1    6   12 THR  GLU   CB   CB     -9.035
+   40    1    1    6   13 THR  PHE   CB   CA     -0.712
+   41    1    1    6   95 THR  TYR   CB   CB     -0.430
+   42    1    1    7   14 TRP  PHE   CA   CB     -0.678
+   43    1    1    7   15 TRP  SER   CA   CA     -3.795
+   44    1    1    7   16 TRP  SER   CA   CB     -0.637
+   45    1    1    7   17 TRP  ARG   CA   CA     -0.823
+   46    1    1    7   95 TRP  TYR   CA   CB     -0.183
+   47    1    1    7  115 TRP  LYS   CA   CB     -2.502
+   48    1    1    8   13 TRP  PHE   CB   CA     -1.522
+   49    1    1    8   14 TRP  PHE   CB   CB     -3.243
+   50    1    1    8   15 TRP  SER   CB   CA     -8.101
+   51    1    1    8   16 TRP  SER   CB   CB     -2.632
+   52    1    1    8   72 TRP  ILE   CB   CA     -0.088
+   53    1    1    8   73 TRP  ILE   CB   CB     -1.085
+   54    1    1    8   94 TRP  TYR   CB   CA     -1.699
+   55    1    1    8   95 TRP  TYR   CB   CB     -4.265
+   56    1    1    8   99 TRP  THR   CB   CB     -0.146
+   57    1    1    8  108 TRP  ASP   CB   CA     -0.032
+   58    1    1    8  109 TRP  ASP   CB   CB     -0.717
+   59    1    1    8  114 TRP  LYS   CB   CA     -0.103
+   60    1    1    8  115 TRP  LYS   CB   CB     -6.212
+   61    1    1    8  116 TRP  ILE   CB   CA     -0.050
+   62    1    1    8  117 TRP  ILE   CB   CB     -2.309
+   63    1    1    8  118 TRP  GLU   CB   CA     -0.004
+   64    1    1    8  122 TRP  PHE   CB   CA      0.166
+   65    1    1    8  123 TRP  PHE   CB   CB     -1.272
+   66    1    1    8  124 TRP  HIE   CB   CA      0.000
+   67    1    1    9   16 GLU  SER   CA   CB     -0.058
+   68    1    1    9   17 GLU  ARG   CA   CA     -6.841
+   69    1    1    9   18 GLU  ARG   CA   CB     -0.102
+   70    1    1    9   19 GLU  ALA   CA   CA     -0.559
+   71    1    1    9   20 GLU  ALA   CA   CB     -0.010
+   72    1    1    9   95 GLU  TYR   CA   CB     -0.004
+   73    1    1   10   15 GLU  SER   CB   CA     -3.813
+   74    1    1   10   16 GLU  SER   CB   CB     -0.292
+   75    1    1   10   17 GLU  ARG   CB   CA      0.103
+   76    1    1   10   18 GLU  ARG   CB   CB    -10.022
+   77    1    1   11   18 GLU  ARG   CA   CB      0.058
+   78    1    1   11   19 GLU  ALA   CA   CA     -2.494
+   79    1    1   11   20 GLU  ALA   CA   CB     -0.005
+   80    1    1   11   21 GLU  ALA   CA   CA     -0.251
+   81    1    1   11   91 GLU  LEU   CA   CB     -0.008
+   82    1    1   12   17 GLU  ARG   CB   CA     -0.603
+   83    1    1   12   18 GLU  ARG   CB   CB     -0.476
+   84    1    1   13   20 PHE  ALA   CA   CB     -0.317
+   85    1    1   13   21 PHE  ALA   CA   CA     -4.122
+   86    1    1   13   22 PHE  ALA   CA   CB     -0.492
+   87    1    1   13   23 PHE  GLU   CA   CA     -0.132
+   88    1    1   13   24 PHE  GLU   CA   CB     -0.012
+   89    1    1   13   91 PHE  LEU   CA   CB     -0.655
+   90    1    1   13   92 PHE  VAL   CA   CA     -0.014
+   91    1    1   13   95 PHE  TYR   CA   CB     -0.398
+   92    1    1   13  123 PHE  PHE   CA   CB     -0.002
+   93    1    1   14   19 PHE  ALA   CB   CA     -0.857
+   94    1    1   14   20 PHE  ALA   CB   CB     -0.288
+   95    1    1   14   21 PHE  ALA   CB   CA     -0.831
+   96    1    1   14   22 PHE  ALA   CB   CB     -1.340
+   97    1    1   14   72 PHE  ILE   CB   CA     -0.016
+   98    1    1   14   73 PHE  ILE   CB   CB     -1.868
+   99    1    1   14   74 PHE  LYS   CB   CA      0.016
+  100    1    1   14   75 PHE  LYS   CB   CB     -0.406
+  101    1    1   14   76 PHE  VAL   CB   CA     -0.100
+  102    1    1   14   77 PHE  VAL   CB   CB     -0.710
+  103    1    1   14   90 PHE  LEU   CB   CA     -0.517
+  104    1    1   14   91 PHE  LEU   CB   CB     -1.334
+  105    1    1   14   92 PHE  VAL   CB   CA     -0.012
+  106    1    1   14   93 PHE  VAL   CB   CB     -0.519
+  107    1    1   14   94 PHE  TYR   CB   CA     -0.216
+  108    1    1   14   95 PHE  TYR   CB   CB     -3.246
+  109    1    1   14  117 PHE  ILE   CB   CB     -0.150
+  110    1    1   14  123 PHE  PHE   CB   CB     -1.159
+  111    1    1   15   22 SER  ALA   CA   CB     -0.021
+  112    1    1   15   23 SER  GLU   CA   CA     -2.959
+  113    1    1   15   24 SER  GLU   CA   CB     -0.046
+  114    1    1   15   25 SER  LYS   CA   CA     -0.617
+  115    1    1   15   95 SER  TYR   CA   CB     -0.026
+  116    1    1   15  123 SER  PHE   CA   CB     -0.036
+  117    1    1   16   21 SER  ALA   CB   CA     -0.845
+  118    1    1   16   22 SER  ALA   CB   CB     -0.200
+  119    1    1   16   23 SER  GLU   CB   CA     -0.965
+  120    1    1   16   24 SER  GLU   CB   CB     -0.198
+  121    1    1   16  123 SER  PHE   CB   CB     -1.342
+  122    1    1   17   24 ARG  GLU   CA   CB     -0.519
+  123    1    1   17   25 ARG  LYS   CA   CA     -3.074
+  124    1    1   17   26 ARG  LYS   CA   CB     -0.513
+  125    1    1   17   27 ARG  LEU   CA   CA     -0.031
+  126    1    1   17   91 ARG  LEU   CA   CB      0.000
+  127    1    1   17  123 ARG  PHE   CA   CB     -0.002
+  128    1    1   18   23 ARG  GLU   CB   CA     -1.049
+  129    1    1   18   24 ARG  GLU   CB   CB     -1.218
+  130    1    1   18   25 ARG  LYS   CB   CA     -0.414
+  131    1    1   18   26 ARG  LYS   CB   CB     -0.012
+  132    1    1   19   26 ALA  LYS   CA   CB     -0.096
+  133    1    1   19   27 ALA  LEU   CA   CA     -3.849
+  134    1    1   19   28 ALA  LEU   CA   CB     -0.053
+  135    1    1   19   29 ALA  TYR   CA   CA     -0.251
+  136    1    1   19   77 ALA  VAL   CA   CB     -0.016
+  137    1    1   19   91 ALA  LEU   CA   CB     -0.016
+  138    1    1   19  123 ALA  PHE   CA   CB     -0.002
+  139    1    1   20   25 ALA  LYS   CB   CA     -0.031
+  140    1    1   20   26 ALA  LYS   CB   CB     -0.366
+  141    1    1   20   27 ALA  LEU   CB   CA     -0.948
+  142    1    1   20   28 ALA  LEU   CB   CB     -0.204
+  143    1    1   20   91 ALA  LEU   CB   CB     -0.643
+  144    1    1   21   28 ALA  LEU   CA   CB     -0.054
+  145    1    1   21   29 ALA  TYR   CA   CA     -3.691
+  146    1    1   21   30 ALA  TYR   CA   CB     -0.031
+  147    1    1   21   31 ALA  LEU   CA   CA     -0.269
+  148    1    1   21   32 ALA  LEU   CA   CB      0.000
+  149    1    1   21   44 ALA  VAL   CA   CB      0.006
+  150    1    1   21   76 ALA  VAL   CA   CA     -0.174
+  151    1    1   21   77 ALA  VAL   CA   CB     -0.156
+  152    1    1   21   91 ALA  LEU   CA   CB     -0.100
+  153    1    1   21  123 ALA  PHE   CA   CB     -0.020
+  154    1    1   21  131 ALA  LEU   CA   CB     -0.002
+  155    1    1   22   27 ALA  LEU   CB   CA     -1.170
+  156    1    1   22   28 ALA  LEU   CB   CB     -0.440
+  157    1    1   22   29 ALA  TYR   CB   CA     -0.998
+  158    1    1   22   76 ALA  VAL   CB   CA     -0.989
+  159    1    1   22   77 ALA  VAL   CB   CB     -0.878
+  160    1    1   22   90 ALA  LEU   CB   CA     -0.315
+  161    1    1   22   91 ALA  LEU   CB   CB     -0.661
+  162    1    1   22  123 ALA  PHE   CB   CB     -0.684
+  163    1    1   22  131 ALA  LEU   CB   CB     -0.183
+  164    1    1   23   30 GLU  TYR   CA   CB     -0.020
+  165    1    1   23   31 GLU  LEU   CA   CA     -4.820
+  166    1    1   23   32 GLU  LEU   CA   CB     -0.058
+  167    1    1   23   33 GLU  ALA   CA   CA     -0.587
+  168    1    1   23   77 GLU  VAL   CA   CB     -0.008
+  169    1    1   23   91 GLU  LEU   CA   CB     -0.006
+  170    1    1   23  123 GLU  PHE   CA   CB     -0.030
+  171    1    1   23  131 GLU  LEU   CA   CB     -0.028
+  172    1    1   24   29 GLU  TYR   CB   CA     -1.367
+  173    1    1   24   30 GLU  TYR   CB   CB     -0.403
+  174    1    1   24   31 GLU  LEU   CB   CA     -1.015
+  175    1    1   24   32 GLU  LEU   CB   CB     -1.159
+  176    1    1   24  123 GLU  PHE   CB   CB     -0.959
+  177    1    1   24  129 GLU  GLN   CB   CB     -0.217
+  178    1    1   24  131 GLU  LEU   CB   CB     -0.440
+  179    1    1   24  137 GLU  LEU   CB   CB     -0.184
+  180    1    1   25   32 LYS  LEU   CA   CB     -0.876
+  181    1    1   25   33 LYS  ALA   CA   CA     -1.644
+  182    1    1   25   34 LYS  ALA   CA   CB     -0.379
+  183    1    1   25   35 LYS  ASP   CA   CA     -0.036
+  184    1    1   26   31 LYS  LEU   CB   CA     -0.817
+  185    1    1   26   32 LYS  LEU   CB   CB     -0.549
+  186    1    1   26   33 LYS  ALA   CB   CA     -0.517
+  187    1    1   26   34 LYS  ALA   CB   CB     -0.216
+  188    1    1   27   34 LEU  ALA   CA   CB     -0.358
+  189    1    1   27   35 LEU  ASP   CA   CA     -1.717
+  190    1    1   27   36 LEU  ASP   CA   CB     -0.096
+  191    1    1   27   37 LEU  PRO   CA   CA      0.190
+  192    1    1   27   38 LEU  PRO   CA   CB     -0.010
+  193    1    1   27   43 LEU  VAL   CA   CA     -0.071
+  194    1    1   27   44 LEU  VAL   CA   CB     -0.002
+  195    1    1   27   77 LEU  VAL   CA   CB     -0.613
+  196    1    1   27   81 LEU  ASP   CA   CB     -0.224
+  197    1    1   27   87 LEU  VAL   CA   CB     -0.400
+  198    1    1   27   91 LEU  LEU   CA   CB     -0.202
+  199    1    1   28   33 LEU  ALA   CB   CA     -0.588
+  200    1    1   28   34 LEU  ALA   CB   CB     -0.415
+  201    1    1   28   44 LEU  VAL   CB   CB     -0.851
+  202    1    1   28   76 LEU  VAL   CB   CA     -0.046
+  203    1    1   28   77 LEU  VAL   CB   CB     -0.866
+  204    1    1   28   78 LEU  THR   CB   CA      0.020
+  205    1    1   28   79 LEU  THR   CB   CB     -0.237
+  206    1    1   28   80 LEU  ASP   CB   CA     -0.083
+  207    1    1   28   81 LEU  ASP   CB   CB     -0.610
+  208    1    1   28   86 LEU  VAL   CB   CA     -0.036
+  209    1    1   28   87 LEU  VAL   CB   CB     -1.136
+  210    1    1   28   88 LEU  CYS   CB   CA     -0.008
+  211    1    1   28   90 LEU  LEU   CB   CA      0.017
+  212    1    1   28   91 LEU  LEU   CB   CB     -1.274
+  213    1    1   29   36 TYR  ASP   CA   CB     -0.386
+  214    1    1   29   37 TYR  PRO   CA   CA      0.732
+  215    1    1   29   38 TYR  PRO   CA   CB     -0.885
+  216    1    1   29   39 TYR  MET   CA   CA     -0.024
+  217    1    1   29   43 TYR  VAL   CA   CA     -0.190
+  218    1    1   29   44 TYR  VAL   CA   CB     -0.250
+  219    1    1   29   77 TYR  VAL   CA   CB     -0.018
+  220    1    1   29  131 TYR  LEU   CA   CB     -0.316
+  221    1    1   30   35 TYR  ASP   CB   CA     -0.309
+  222    1    1   30   37 TYR  PRO   CB   CA     -1.711
+  223    1    1   30   38 TYR  PRO   CB   CB     -2.332
+  224    1    1   30   39 TYR  MET   CB   CA     -0.012
+  225    1    1   30   43 TYR  VAL   CB   CA     -0.847
+  226    1    1   30   44 TYR  VAL   CB   CB     -1.836
+  227    1    1   30   45 TYR  ARG   CB   CA     -0.006
+  228    1    1   30   48 TYR  VAL   CB   CB     -0.291
+  229    1    1   30   77 TYR  VAL   CB   CB     -0.366
+  230    1    1   30  128 TYR  GLN   CB   CA     -0.002
+  231    1    1   30  130 TYR  LEU   CB   CA     -0.093
+  232    1    1   30  131 TYR  LEU   CB   CB     -2.466
+  233    1    1   30  132 TYR  MET   CB   CA     -0.004
+  234    1    1   30  134 TYR  ARG   CB   CA     -0.002
+  235    1    1   30  136 TYR  LEU   CB   CA     -0.052
+  236    1    1   30  137 TYR  LEU   CB   CB     -2.091
+  237    1    1   30  138 TYR  MET   CB   CA     -0.034
+  238    1    1   30  139 TYR  MET   CB   CB     -1.836
+  239    1    1   30  140 TYR  VAL   CB   CA     -0.002
+  240    1    1   31   38 LEU  PRO   CA   CB     -0.021
+  241    1    1   31   44 LEU  VAL   CA   CB     -0.010
+  242    1    1   31  131 LEU  LEU   CA   CB     -0.016
+  243    1    1   32   38 LEU  PRO   CB   CB     -0.371
+  244    1    1   32  131 LEU  LEU   CB   CB     -0.122
+  245    1    1   32  137 LEU  LEU   CB   CB     -0.472
+  246    1    1   33   44 ALA  VAL   CA   CB     -0.014
+  247    1    1   34   38 ALA  PRO   CB   CB     -0.118
+  248    1    1   34   44 ALA  VAL   CB   CB     -0.078
+  249    1    1   34   81 ALA  ASP   CB   CB     -0.058
+  250    1    1   35   42 ASP  LYS   CA   CB     -1.605
+  251    1    1   35   43 ASP  VAL   CA   CA     -3.977
+  252    1    1   35   44 ASP  VAL   CA   CB     -0.178
+  253    1    1   35   45 ASP  ARG   CA   CA     -0.020
+  254    1    1   35   81 ASP  ASP   CA   CB      0.000
+  255    1    1   36   40 ASP  MET   CB   CB     -1.461
+  256    1    1   36   41 ASP  LYS   CB   CA     -0.013
+  257    1    1   36   42 ASP  LYS   CB   CB    -11.090
+  258    1    1   36   43 ASP  VAL   CB   CA     -1.369
+  259    1    1   36   44 ASP  VAL   CB   CB     -0.283
+  260    1    1   36   81 ASP  ASP   CB   CB      0.002
+  261    1    1   37   44 PRO  VAL   CA   CB     -0.164
+  262    1    1   37   45 PRO  ARG   CA   CA     -0.036
+  263    1    1   37  139 PRO  MET   CA   CB     -0.072
+  264    1    1   38   43 PRO  VAL   CB   CA     -0.486
+  265    1    1   38   44 PRO  VAL   CB   CB     -0.288
+  266    1    1   38  136 PRO  LEU   CB   CA     -0.018
+  267    1    1   38  138 PRO  MET   CB   CA     -0.208
+  268    1    1   38  139 PRO  MET   CB   CB     -0.240
+  269    1    1   41   78 LYS  THR   CA   CA     -0.271
+  270    1    1   41   80 LYS  ASP   CA   CA     -0.800
+  271    1    1   41   81 LYS  ASP   CA   CB     -0.550
+  272    1    1   41   82 LYS  ASP   CA   CA     -0.076
+  273    1    1   41   83 LYS  ASP   CA   CB     -0.066
+  274    1    1   42   78 LYS  THR   CB   CA     -0.014
+  275    1    1   42   80 LYS  ASP   CB   CA     -0.623
+  276    1    1   42   81 LYS  ASP   CB   CB     -1.091
+  277    1    1   42   85 LYS  LEU   CB   CB     -0.184
+  278    1    1   43   76 VAL  VAL   CA   CA      0.428
+  279    1    1   43   77 VAL  VAL   CA   CB     -0.042
+  280    1    1   43   78 VAL  THR   CA   CA     -3.262
+  281    1    1   43   79 VAL  THR   CA   CB     -1.243
+  282    1    1   43   80 VAL  ASP   CA   CA     -0.835
+  283    1    1   43   81 VAL  ASP   CA   CB     -0.677
+  284    1    1   43   82 VAL  ASP   CA   CA     -0.052
+  285    1    1   43  139 VAL  MET   CA   CB     -0.002
+  286    1    1   44   48 VAL  VAL   CB   CB     -0.460
+  287    1    1   44   76 VAL  VAL   CB   CA     -0.010
+  288    1    1   44   77 VAL  VAL   CB   CB     -0.798
+  289    1    1   44   78 VAL  THR   CB   CA      0.007
+  290    1    1   44   79 VAL  THR   CB   CB     -0.272
+  291    1    1   44   80 VAL  ASP   CB   CA     -0.430
+  292    1    1   44   81 VAL  ASP   CB   CB     -0.905
+  293    1    1   44  131 VAL  LEU   CB   CB     -0.130
+  294    1    1   45   74 ARG  LYS   CA   CA     -0.502
+  295    1    1   45   75 ARG  LYS   CA   CB      0.008
+  296    1    1   45   76 ARG  VAL   CA   CA     -2.656
+  297    1    1   45   77 ARG  VAL   CA   CB     -0.404
+  298    1    1   45   78 ARG  THR   CA   CA     -6.736
+  299    1    1   45   79 ARG  THR   CA   CB     -0.056
+  300    1    1   45   80 ARG  ASP   CA   CA     -0.311
+  301    1    1   45   81 ARG  ASP   CA   CB     -0.064
+  302    1    1   45   82 ARG  ASP   CA   CA     -0.074
+  303    1    1   45  139 ARG  MET   CA   CB     -0.010
+  304    1    1   46   50 ARG  VAL   CB   CB     -1.327
+  305    1    1   46   75 ARG  LYS   CB   CB      0.045
+  306    1    1   46   76 ARG  VAL   CB   CA     -0.661
+  307    1    1   46   78 ARG  THR   CB   CA     -1.024
+  308    1    1   46   79 ARG  THR   CB   CB     -1.749
+  309    1    1   46   80 ARG  ASP   CB   CA     -0.133
+  310    1    1   46   82 ARG  ASP   CB   CA     -0.132
+  311    1    1   46   83 ARG  ASP   CB   CB    -12.607
+  312    1    1   47   73 VAL  ILE   CA   CB     -0.036
+  313    1    1   47   74 VAL  LYS   CA   CA     -2.898
+  314    1    1   47   75 VAL  LYS   CA   CB     -0.652
+  315    1    1   47   76 VAL  VAL   CA   CA     -0.332
+  316    1    1   47   77 VAL  VAL   CA   CB     -0.316
+  317    1    1   47   78 VAL  THR   CA   CA     -0.018
+  318    1    1   47   79 VAL  THR   CA   CB     -0.123
+  319    1    1   47  125 VAL  HIE   CA   CB     -0.299
+  320    1    1   47  131 VAL  LEU   CA   CB     -0.083
+  321    1    1   47  139 VAL  MET   CA   CB     -0.006
+  322    1    1   48   52 VAL  LEU   CB   CB     -0.265
+  323    1    1   48   73 VAL  ILE   CB   CB     -0.700
+  324    1    1   48   74 VAL  LYS   CB   CA     -0.462
+  325    1    1   48   76 VAL  VAL   CB   CA     -0.306
+  326    1    1   48   77 VAL  VAL   CB   CB     -1.099
+  327    1    1   48   78 VAL  THR   CB   CA     -0.064
+  328    1    1   48  122 VAL  PHE   CB   CA     -0.004
+  329    1    1   48  123 VAL  PHE   CB   CB     -0.186
+  330    1    1   48  124 VAL  HIE   CB   CA     -0.901
+  331    1    1   48  125 VAL  HIE   CB   CB     -1.589
+  332    1    1   48  130 VAL  LEU   CB   CA     -0.052
+  333    1    1   48  131 VAL  LEU   CB   CB     -1.498
+  334    1    1   48  132 VAL  MET   CB   CA     -0.028
+  335    1    1   48  139 VAL  MET   CB   CB     -0.462
+  336    1    1   49   70 VAL  CYS   CA   CA      0.068
+  337    1    1   49   71 VAL  CYS   CA   CB     -0.064
+  338    1    1   49   72 VAL  ILE   CA   CA     -3.249
+  339    1    1   49   73 VAL  ILE   CA   CB     -0.159
+  340    1    1   49   74 VAL  LYS   CA   CA     -6.868
+  341    1    1   49   75 VAL  LYS   CA   CB     -0.773
+  342    1    1   49   76 VAL  VAL   CA   CA     -0.052
+  343    1    1   49   77 VAL  VAL   CA   CB     -0.081
+  344    1    1   49   78 VAL  THR   CA   CA      0.008
+  345    1    1   49  125 VAL  HIE   CA   CB     -0.010
+  346    1    1   50   54 VAL  LYS   CB   CB     -0.467
+  347    1    1   50   70 VAL  CYS   CB   CA      0.142
+  348    1    1   50   72 VAL  ILE   CB   CA     -1.125
+  349    1    1   50   74 VAL  LYS   CB   CA     -0.178
+  350    1    1   50   75 VAL  LYS   CB   CB     -1.643
+  351    1    1   50   76 VAL  VAL   CB   CA     -0.208
+  352    1    1   50   79 VAL  THR   CB   CB     -0.138
+  353    1    1   51   69 LEU  LEU   CA   CB     -0.020
+  354    1    1   51   70 LEU  CYS   CA   CA     -3.238
+  355    1    1   51   71 LEU  CYS   CA   CB     -0.681
+  356    1    1   51   72 LEU  ILE   CA   CA     -0.340
+  357    1    1   51   73 LEU  ILE   CA   CB     -0.339
+  358    1    1   51   74 LEU  LYS   CA   CA     -0.108
+  359    1    1   51   75 LEU  LYS   CA   CB     -0.138
+  360    1    1   51  117 LEU  ILE   CA   CB     -0.516
+  361    1    1   51  125 LEU  HIE   CA   CB     -0.058
+  362    1    1   52   69 LEU  LEU   CB   CB     -0.995
+  363    1    1   52   70 LEU  CYS   CB   CA     -0.160
+  364    1    1   52   72 LEU  ILE   CB   CA     -0.310
+  365    1    1   52   73 LEU  ILE   CB   CB     -1.404
+  366    1    1   52   74 LEU  LYS   CB   CA     -0.084
+  367    1    1   52  116 LEU  ILE   CB   CA      0.016
+  368    1    1   52  117 LEU  ILE   CB   CB     -0.991
+  369    1    1   52  118 LEU  GLU   CB   CA     -0.006
+  370    1    1   52  119 LEU  GLU   CB   CB     -0.258
+  371    1    1   52  124 LEU  HIE   CB   CA      0.034
+  372    1    1   52  125 LEU  HIE   CB   CB     -3.165
+  373    1    1   53   66 LYS  ASN   CA   CA     -0.165
+  374    1    1   53   67 LYS  ASN   CA   CB     -0.022
+  375    1    1   53   68 LYS  LEU   CA   CA     -2.201
+  376    1    1   53   69 LYS  LEU   CA   CB     -0.364
+  377    1    1   53   70 LYS  CYS   CA   CA     -7.368
+  378    1    1   53   71 LYS  CYS   CA   CB     -0.056
+  379    1    1   53   72 LYS  ILE   CA   CA     -0.169
+  380    1    1   53   73 LYS  ILE   CA   CB     -0.062
+  381    1    1   53   74 LYS  LYS   CA   CA     -0.008
+  382    1    1   54   58 LYS  ARG   CB   CB     -0.078
+  383    1    1   54   68 LYS  LEU   CB   CA     -0.931
+  384    1    1   54   69 LYS  LEU   CB   CB     -0.323
+  385    1    1   54   70 LYS  CYS   CB   CA     -1.309
+  386    1    1   54   71 LYS  CYS   CB   CB     -0.630
+  387    1    1   54   72 LYS  ILE   CB   CA     -0.103
+  388    1    1   55   66 TYR  ASN   CA   CA     -2.780
+  389    1    1   55   67 TYR  ASN   CA   CB     -0.987
+  390    1    1   55   68 TYR  LEU   CA   CA     -0.012
+  391    1    1   55   69 TYR  LEU   CA   CB     -0.508
+  392    1    1   55   70 TYR  CYS   CA   CA     -0.070
+  393    1    1   55   71 TYR  CYS   CA   CB     -0.206
+  394    1    1   56   60 TYR  HIE   CB   CB     -1.723
+  395    1    1   56   61 TYR  VAL   CB   CA     -0.028
+  396    1    1   56   65 TYR  GLY   CB   CA     -0.181
+  397    1    1   56   66 TYR  ASN   CB   CA     -0.460
+  398    1    1   56   67 TYR  ASN   CB   CB     -0.394
+  399    1    1   56   68 TYR  LEU   CB   CA     -0.677
+  400    1    1   56   69 TYR  LEU   CB   CB     -1.905
+  401    1    1   56   70 TYR  CYS   CB   CA     -0.111
+  402    1    1   57   64 ARG  ASP   CA   CB     -0.846
+  403    1    1   57   65 ARG  GLY   CA   CA     -2.981
+  404    1    1   57   66 ARG  ASN   CA   CA     -6.519
+  405    1    1   57   67 ARG  ASN   CA   CB      0.005
+  406    1    1   57   68 ARG  LEU   CA   CA     -0.129
+  407    1    1   57   69 ARG  LEU   CA   CB     -0.093
+  408    1    1   57   70 ARG  CYS   CA   CA     -0.022
+  409    1    1   58   62 ARG  VAL   CB   CB     -1.905
+  410    1    1   58   63 ARG  ASP   CB   CA     -1.030
+  411    1    1   58   64 ARG  ASP   CB   CB     -3.497
+  412    1    1   58   65 ARG  GLY   CB   CA     -0.171
+  413    1    1   58   66 ARG  ASN   CB   CA     -0.835
+  414    1    1   58   67 ARG  ASN   CB   CB     -1.213
+  415    1    1   58   68 ARG  LEU   CB   CA     -0.155
+  416    1    1   59   66 HIE  ASN   CA   CA     -0.012
+  417    1    1   59   67 HIE  ASN   CA   CB     -0.065
+  418    1    1   60   65 HIE  GLY   CB   CA     -0.386
+  419    1    1   63  100 ASP  ASP   CA   CA     -0.052
+  420    1    1   63  101 ASP  ASP   CA   CB      0.000
+  421    1    1   64   67 ASP  ASN   CB   CB     -1.362
+  422    1    1   65   98 GLY  THR   CA   CA     -0.205
+  423    1    1   65  100 GLY  ASP   CA   CA     -0.957
+  424    1    1   65  101 GLY  ASP   CA   CB     -0.123
+  425    1    1   65  102 GLY  GLN   CA   CA     -0.069
+  426    1    1   65  104 GLY  ALA   CA   CA     -0.018
+  427    1    1   66   98 ASN  THR   CA   CA     -2.627
+  428    1    1   66  100 ASN  ASP   CA   CA     -0.454
+  429    1    1   66  101 ASN  ASP   CA   CB     -0.640
+  430    1    1   66  102 ASN  GLN   CA   CA     -0.106
+  431    1    1   67   71 ASN  CYS   CB   CB     -0.237
+  432    1    1   67   96 ASN  ARG   CB   CA     -0.128
+  433    1    1   67   97 ASN  ARG   CB   CB     -0.471
+  434    1    1   67   98 ASN  THR   CB   CA      0.048
+  435    1    1   67  100 ASN  ASP   CB   CA     -0.477
+  436    1    1   67  101 ASN  ASP   CB   CB     -2.027
+  437    1    1   68   94 LEU  TYR   CA   CA     -0.028
+  438    1    1   68   95 LEU  TYR   CA   CB     -0.111
+  439    1    1   68   96 LEU  ARG   CA   CA     -3.848
+  440    1    1   68   97 LEU  ARG   CA   CB     -0.108
+  441    1    1   68   98 LEU  THR   CA   CA     -5.728
+  442    1    1   68   99 LEU  THR   CA   CB     -0.532
+  443    1    1   68  100 LEU  ASP   CA   CA     -0.122
+  444    1    1   68  101 LEU  ASP   CA   CB     -0.074
+  445    1    1   68  117 LEU  ILE   CA   CB     -0.082
+  446    1    1   69   73 LEU  ILE   CB   CB     -0.281
+  447    1    1   69   94 LEU  TYR   CB   CA     -0.092
+  448    1    1   69   98 LEU  THR   CB   CA     -0.579
+  449    1    1   69   99 LEU  THR   CB   CB     -0.222
+  450    1    1   69  100 LEU  ASP   CB   CA     -0.091
+  451    1    1   69  102 LEU  GLN   CB   CA     -0.020
+  452    1    1   69  108 LEU  ASP   CB   CA     -0.008
+  453    1    1   69  109 LEU  ASP   CB   CB     -0.142
+  454    1    1   69  110 LEU  VAL   CB   CA     -0.038
+  455    1    1   69  111 LEU  VAL   CB   CB     -0.802
+  456    1    1   69  116 LEU  ILE   CB   CA     -0.216
+  457    1    1   69  117 LEU  ILE   CB   CB     -2.127
+  458    1    1   69  118 LEU  GLU   CB   CA     -0.002
+  459    1    1   70   94 CYS  TYR   CA   CA     -3.157
+  460    1    1   70   95 CYS  TYR   CA   CB     -0.224
+  461    1    1   70   96 CYS  ARG   CA   CA      0.120
+  462    1    1   70   97 CYS  ARG   CA   CB     -0.383
+  463    1    1   70   98 CYS  THR   CA   CA     -0.111
+  464    1    1   70  117 CYS  ILE   CA   CB     -0.006
+  465    1    1   71   75 CYS  LYS   CB   CB     -0.345
+  466    1    1   71   92 CYS  VAL   CB   CA     -0.050
+  467    1    1   71   93 CYS  VAL   CB   CB     -0.427
+  468    1    1   71   94 CYS  TYR   CB   CA     -0.054
+  469    1    1   71   96 CYS  ARG   CB   CA     -0.721
+  470    1    1   71   97 CYS  ARG   CB   CB     -2.124
+  471    1    1   71   98 CYS  THR   CB   CA     -0.082
+  472    1    1   72   90 ILE  LEU   CA   CA     -0.014
+  473    1    1   72   92 ILE  VAL   CA   CA     -3.634
+  474    1    1   72   93 ILE  VAL   CA   CB     -0.028
+  475    1    1   72   94 ILE  TYR   CA   CA     -5.318
+  476    1    1   72   95 ILE  TYR   CA   CB     -1.275
+  477    1    1   72   96 ILE  ARG   CA   CA     -0.108
+  478    1    1   72   97 ILE  ARG   CA   CB     -0.041
+  479    1    1   72  117 ILE  ILE   CA   CB     -0.572
+  480    1    1   73   77 ILE  VAL   CB   CB     -0.526
+  481    1    1   73   90 ILE  LEU   CB   CA     -0.044
+  482    1    1   73   92 ILE  VAL   CB   CA     -0.492
+  483    1    1   73   94 ILE  TYR   CB   CA     -0.674
+  484    1    1   73   95 ILE  TYR   CB   CB     -0.801
+  485    1    1   73   96 ILE  ARG   CB   CA     -0.262
+  486    1    1   73  116 ILE  ILE   CB   CA     -0.329
+  487    1    1   73  117 ILE  ILE   CB   CB     -2.010
+  488    1    1   73  118 ILE  GLU   CB   CA     -0.006
+  489    1    1   73  122 ILE  PHE   CB   CA     -0.012
+  490    1    1   73  123 ILE  PHE   CB   CB     -0.851
+  491    1    1   73  124 ILE  HIE   CB   CA     -0.098
+  492    1    1   73  125 ILE  HIE   CB   CB     -0.811
+  493    1    1   73  131 ILE  LEU   CB   CB     -0.129
+  494    1    1   74   89 LYS  CYS   CA   CB     -0.070
+  495    1    1   74   90 LYS  LEU   CA   CA     -5.957
+  496    1    1   74   91 LYS  LEU   CA   CB      1.099
+  497    1    1   74   92 LYS  VAL   CA   CA      0.197
+  498    1    1   74   93 LYS  VAL   CA   CB     -0.935
+  499    1    1   74   94 LYS  TYR   CA   CA     -0.242
+  500    1    1   74   95 LYS  TYR   CA   CB     -0.118
+  501    1    1   75   79 LYS  THR   CB   CB     -0.968
+  502    1    1   75   83 LYS  ASP   CB   CB     -0.336
+  503    1    1   75   88 LYS  CYS   CB   CA     -0.514
+  504    1    1   75   89 LYS  CYS   CB   CB     -1.656
+  505    1    1   75   90 LYS  LEU   CB   CA      0.015
+  506    1    1   75   91 LYS  LEU   CB   CB     -0.244
+  507    1    1   75   92 LYS  VAL   CB   CA     -0.447
+  508    1    1   75   93 LYS  VAL   CB   CB     -0.912
+  509    1    1   75   94 LYS  TYR   CB   CA     -0.027
+  510    1    1   76   86 VAL  VAL   CA   CA     -0.022
+  511    1    1   76   87 VAL  VAL   CA   CB     -0.050
+  512    1    1   76   88 VAL  CYS   CA   CA     -2.797
+  513    1    1   76   89 VAL  CYS   CA   CB     -0.066
+  514    1    1   76   90 VAL  LEU   CA   CA     -5.958
+  515    1    1   76   91 VAL  LEU   CA   CB     -0.562
+  516    1    1   76   92 VAL  VAL   CA   CA     -0.069
+  517    1    1   76   93 VAL  VAL   CA   CB     -0.058
+  518    1    1   76  131 VAL  LEU   CA   CB     -0.008
+  519    1    1   77   90 VAL  LEU   CB   CA     -1.425
+  520    1    1   77   91 VAL  LEU   CB   CB     -0.619
+  521    1    1   77  123 VAL  PHE   CB   CB     -0.509
+  522    1    1   77  131 VAL  LEU   CB   CB     -0.829
+  523    1    1   78   86 THR  VAL   CA   CA     -3.104
+  524    1    1   78   87 THR  VAL   CA   CB     -7.014
+  525    1    1   78   88 THR  CYS   CA   CA     -0.317
+  526    1    1   78   89 THR  CYS   CA   CB     -0.009
+  527    1    1   78   90 THR  LEU   CA   CA      0.002
+  528    1    1   78   91 THR  LEU   CA   CB     -0.431
+  529    1    1   79   83 THR  ASP   CB   CB     -0.799
+  530    1    1   79   84 THR  LEU   CB   CA     -0.054
+  531    1    1   79   86 THR  VAL   CB   CA     -0.120
+  532    1    1   79   87 THR  VAL   CB   CB     -0.366
+  533    1    1   79   88 THR  CYS   CB   CA     -0.166
+  534    1    1   79   89 THR  CYS   CB   CB     -2.167
+  535    1    1   79   90 THR  LEU   CB   CA     -0.169
+  536    1    1   80   87 ASP  VAL   CA   CB     -4.180
+  537    1    1   80   88 ASP  CYS   CA   CA     -0.276
+  538    1    1   80   89 ASP  CYS   CA   CB      0.232
+  539    1    1   81   85 ASP  LEU   CB   CB     -1.646
+  540    1    1   81   86 ASP  VAL   CB   CA     -0.263
+  541    1    1   81   87 ASP  VAL   CB   CB     -1.166
+  542    1    1   81   88 ASP  CYS   CB   CA     -0.050
+  543    1    1   82   89 ASP  CYS   CA   CB     -0.060
+  544    1    1   87   91 VAL  LEU   CB   CB     -0.491
+  545    1    1   89   93 CYS  VAL   CB   CB     -0.558
+  546    1    1   93   97 VAL  ARG   CB   CB     -1.815
+  547    1    1   94  117 TYR  ILE   CA   CB     -0.028
+  548    1    1   95   99 TYR  THR   CB   CB     -0.627
+  549    1    1   95  109 TYR  ASP   CB   CB     -1.195
+  550    1    1   95  115 TYR  LYS   CB   CB     -0.362
+  551    1    1   95  117 TYR  ILE   CB   CB     -0.528
+  552    1    1   96  109 ARG  ASP   CA   CB      0.010
+  553    1    1   96  117 ARG  ILE   CA   CB     -0.010
+  554    1    1   97  101 ARG  ASP   CB   CB     -0.196
+  555    1    1   98  109 THR  ASP   CA   CB     -0.279
+  556    1    1   98  117 THR  ILE   CA   CB      0.028
+  557    1    1   99  103 THR  GLN   CB   CB     -0.937
+  558    1    1   99  104 THR  ALA   CB   CA     -0.020
+  559    1    1   99  106 THR  GLN   CB   CA     -0.008
+  560    1    1   99  108 THR  ASP   CB   CA     -0.161
+  561    1    1   99  109 THR  ASP   CB   CB     -9.784
+  562    1    1   99  110 THR  VAL   CB   CA     -0.018
+  563    1    1   99  117 THR  ILE   CB   CB     -0.376
+  564    1    1  100  109 ASP  ASP   CA   CB     -0.002
+  565    1    1  102  109 GLN  ASP   CA   CB     -0.177
+  566    1    1  102  110 GLN  VAL   CA   CA     -0.183
+  567    1    1  102  111 GLN  VAL   CA   CB     -0.030
+  568    1    1  103  107 GLN  GLN   CB   CB     -0.872
+  569    1    1  103  108 GLN  ASP   CB   CA     -0.741
+  570    1    1  103  109 GLN  ASP   CB   CB     -0.329
+  571    1    1  104  111 ALA  VAL   CA   CB     -0.085
+  572    1    1  104  112 ALA  LYS   CA   CA     -0.383
+  573    1    1  104  113 ALA  LYS   CA   CB     -0.012
+  574    1    1  105  110 ALA  VAL   CB   CA     -0.700
+  575    1    1  105  111 ALA  VAL   CB   CB     -0.291
+  576    1    1  106  113 GLN  LYS   CA   CB     -0.034
+  577    1    1  106  114 GLN  LYS   CA   CA     -0.380
+  578    1    1  106  115 GLN  LYS   CA   CB     -0.010
+  579    1    1  107  115 GLN  LYS   CB   CB     -0.267
+  580    1    1  108  115 ASP  LYS   CA   CB     -0.050
+  581    1    1  108  116 ASP  ILE   CA   CA     -4.903
+  582    1    1  108  117 ASP  ILE   CA   CB     -0.108
+  583    1    1  108  118 ASP  GLU   CA   CA     -0.181
+  584    1    1  108  119 ASP  GLU   CA   CB     -0.014
+  585    1    1  109  114 ASP  LYS   CB   CA     -1.033
+  586    1    1  109  115 ASP  LYS   CB   CB    -11.076
+  587    1    1  109  116 ASP  ILE   CB   CA     -2.010
+  588    1    1  109  117 ASP  ILE   CB   CB     -1.070
+  589    1    1  110  117 VAL  ILE   CA   CB     -0.374
+  590    1    1  110  118 VAL  GLU   CA   CA     -2.950
+  591    1    1  110  119 VAL  GLU   CA   CB     -0.209
+  592    1    1  110  120 VAL  LYS   CA   CA     -0.593
+  593    1    1  111  116 VAL  ILE   CB   CA     -1.357
+  594    1    1  111  117 VAL  ILE   CB   CB     -0.666
+  595    1    1  111  118 VAL  GLU   CB   CA     -1.050
+  596    1    1  111  119 VAL  GLU   CB   CB     -0.396
+  597    1    1  112  119 LYS  GLU   CA   CB     -0.555
+  598    1    1  112  120 LYS  LYS   CA   CA     -4.597
+  599    1    1  112  121 LYS  LYS   CA   CB     -0.639
+  600    1    1  112  122 LYS  PHE   CA   CA     -0.193
+  601    1    1  113  118 LYS  GLU   CB   CA     -0.772
+  602    1    1  113  119 LYS  GLU   CB   CB     -0.701
+  603    1    1  113  120 LYS  LYS   CB   CA     -1.769
+  604    1    1  113  121 LYS  LYS   CB   CB     -1.303
+  605    1    1  114  121 LYS  LYS   CA   CB     -0.987
+  606    1    1  114  122 LYS  PHE   CA   CA     -2.842
+  607    1    1  114  123 LYS  PHE   CA   CB     -0.345
+  608    1    1  114  124 LYS  HIE   CA   CA     -0.133
+  609    1    1  115  120 LYS  LYS   CB   CA     -0.208
+  610    1    1  115  121 LYS  LYS   CB   CB     -1.357
+  611    1    1  115  122 LYS  PHE   CB   CA     -0.894
+  612    1    1  115  123 LYS  PHE   CB   CB     -0.170
+  613    1    1  116  123 ILE  PHE   CA   CB     -0.205
+  614    1    1  116  124 ILE  HIE   CA   CA     -4.209
+  615    1    1  116  125 ILE  HIE   CA   CB     -0.116
+  616    1    1  116  126 ILE  SER   CA   CA     -0.387
+  617    1    1  116  127 ILE  SER   CA   CB     -0.018
+  618    1    1  117  122 ILE  PHE   CB   CA     -1.064
+  619    1    1  117  123 ILE  PHE   CB   CB     -0.400
+  620    1    1  117  124 ILE  HIE   CB   CA     -0.892
+  621    1    1  117  125 ILE  HIE   CB   CB     -0.298
+  622    1    1  118  125 GLU  HIE   CA   CB     -0.133
+  623    1    1  118  126 GLU  SER   CA   CA     -4.784
+  624    1    1  118  127 GLU  SER   CA   CB     -0.519
+  625    1    1  118  128 GLU  GLN   CA   CA     -0.465
+  626    1    1  118  129 GLU  GLN   CA   CB     -0.006
+  627    1    1  119  124 GLU  HIE   CB   CA     -1.047
+  628    1    1  119  125 GLU  HIE   CB   CB     -0.527
+  629    1    1  119  126 GLU  SER   CB   CA     -1.342
+  630    1    1  119  127 GLU  SER   CB   CB     -8.511
+  631    1    1  119  128 GLU  GLN   CB   CA     -0.120
+  632    1    1  119  135 GLU  ARG   CB   CB     -0.270
+  633    1    1  120  127 LYS  SER   CA   CB     -0.769
+  634    1    1  120  128 LYS  GLN   CA   CA     -2.210
+  635    1    1  120  129 LYS  GLN   CA   CB     -0.365
+  636    1    1  120  130 LYS  LEU   CA   CA     -0.063
+  637    1    1  120  135 LYS  ARG   CA   CB     -0.020
+  638    1    1  121  126 LYS  SER   CB   CA     -0.778
+  639    1    1  121  127 LYS  SER   CB   CB     -0.676
+  640    1    1  121  128 LYS  GLN   CB   CA     -1.081
+  641    1    1  121  129 LYS  GLN   CB   CB     -0.260
+  642    1    1  121  135 LYS  ARG   CB   CB     -0.057
+  643    1    1  122  129 PHE  GLN   CA   CB     -0.370
+  644    1    1  122  130 PHE  LEU   CA   CA     -3.961
+  645    1    1  122  131 PHE  LEU   CA   CB     -0.255
+  646    1    1  122  132 PHE  MET   CA   CA     -0.311
+  647    1    1  123  128 PHE  GLN   CB   CA     -1.472
+  648    1    1  123  129 PHE  GLN   CB   CB     -1.050
+  649    1    1  123  130 PHE  LEU   CB   CA     -1.050
+  650    1    1  123  131 PHE  LEU   CB   CB     -2.188
+  651    1    1  124  131 HIE  LEU   CA   CB     -0.462
+  652    1    1  124  132 HIE  MET   CA   CA     -3.212
+  653    1    1  124  133 HIE  MET   CA   CB     -0.279
+  654    1    1  124  134 HIE  ARG   CA   CA     -0.389
+  655    1    1  124  139 HIE  MET   CA   CB     -0.036
+  656    1    1  125  130 HIE  LEU   CB   CA     -1.033
+  657    1    1  125  131 HIE  LEU   CB   CB     -0.661
+  658    1    1  125  132 HIE  MET   CB   CA     -1.104
+  659    1    1  125  133 HIE  MET   CB   CB     -1.204
+  660    1    1  125  139 HIE  MET   CB   CB     -0.110
+  661    1    1  126  133 SER  MET   CA   CB     -0.203
+  662    1    1  126  134 SER  ARG   CA   CA     -4.898
+  663    1    1  126  135 SER  ARG   CA   CB     -0.029
+  664    1    1  126  136 SER  LEU   CA   CA     -0.301
+  665    1    1  127  132 SER  MET   CB   CA     -1.106
+  666    1    1  127  133 SER  MET   CB   CB     -0.562
+  667    1    1  127  134 SER  ARG   CB   CA     -0.950
+  668    1    1  127  135 SER  ARG   CB   CB     -0.739
+  669    1    1  128  135 GLN  ARG   CA   CB     -0.097
+  670    1    1  128  136 GLN  LEU   CA   CA     -4.170
+  671    1    1  128  137 GLN  LEU   CA   CB     -0.040
+  672    1    1  128  138 GLN  MET   CA   CA     -0.433
+  673    1    1  129  134 GLN  ARG   CB   CA     -0.633
+  674    1    1  129  135 GLN  ARG   CB   CB     -2.269
+  675    1    1  129  136 GLN  LEU   CB   CA     -0.766
+  676    1    1  129  137 GLN  LEU   CB   CB     -0.960
+  677    1    1  130  137 LEU  LEU   CA   CB     -0.328
+  678    1    1  130  138 LEU  MET   CA   CA     -3.147
+  679    1    1  130  139 LEU  MET   CA   CB     -0.145
+  680    1    1  130  140 LEU  VAL   CA   CA     -0.370
+  681    1    1  131  136 LEU  LEU   CB   CA     -1.165
+  682    1    1  131  137 LEU  LEU   CB   CB     -1.110
+  683    1    1  131  138 LEU  MET   CB   CA     -2.010
+  684    1    1  131  139 LEU  MET   CB   CB     -0.562
+  685    1    1  132  139 MET  MET   CA   CB     -0.221
+  686    1    1  132  140 MET  VAL   CA   CA     -3.958
+  687    1    1  132  141 MET  VAL   CA   CB     -0.104
+  688    1    1  132  142 MET  ALA   CA   CA     -0.365
+  689    1    1  132  143 MET  ALA   CA   CB     -0.024
+  690    1    1  133  138 MET  MET   CB   CA     -1.621
+  691    1    1  133  139 MET  MET   CB   CB     -1.282
+  692    1    1  133  140 MET  VAL   CB   CA     -0.822
+  693    1    1  133  141 MET  VAL   CB   CB     -0.749
+  694    1    1  134  141 ARG  VAL   CA   CB     -1.086
+  695    1    1  134  142 ARG  ALA   CA   CA     -2.837
+  696    1    1  134  143 ARG  ALA   CA   CB     -0.409
+  697    1    1  134  144 ARG  LYS   CA   CA      0.012
+  698    1    1  135  140 ARG  VAL   CB   CA     -0.661
+  699    1    1  135  141 ARG  VAL   CB   CB     -0.641
+  700    1    1  135  142 ARG  ALA   CB   CA     -0.390
+  701    1    1  135  143 ARG  ALA   CB   CB     -0.162
+  702    1    1  136  143 LEU  ALA   CA   CB     -0.234
+  703    1    1  136  144 LEU  LYS   CA   CA     -0.036
+  704    1    1  137  142 LEU  ALA   CB   CA     -0.495
+  705    1    1  137  143 LEU  ALA   CB   CB     -0.238
+  706    1    1  143  147 ALA  GLU   CB   CB     -0.427
+  707    1    1  147  152 GLU  ASN   CB   CA     -0.030
+  708    1    1  147  153 GLU  ASN   CB   CB     -0.534
+  709    1    1  151  155 ARG  VAL   CB   CB     -0.597
