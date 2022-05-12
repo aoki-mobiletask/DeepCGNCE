@@ -1,8 +1,8 @@
 # data io control
 inFeatureDirLocal = "../cgFeatures/"
 inLabelDirLocal = "../cgLabels/"
-inFeatureDirRemote = "/bbfs/fsa/home/ww_huanghy/workspace/SCOPe2.08/cgFeatures/"
-inLabelDirRemote = "/bbfs/fsa/home/ww_huanghy/workspace/SCOPe2.08/cgLabels/"
+inFeatureDirRemote = ""
+inLabelDirRemote = ""
 prolist = "list"
 
 # training control
