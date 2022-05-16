@@ -1,4 +1,3 @@
-import enum
 import activations
 import optimizers
 import numpy as np
@@ -6,6 +5,30 @@ import tensorflow as tf
 import sys
 
 countsize: float = 0.
+
+
+class GlobalNorm:
+    def __init__(self, mean=0, stddev=1):
+        self.offset = mean
+        self.scale = stddev
+
+    def config(self, path: str = ""):
+        if path:
+            self.offset = tf.convert_to_tensor(
+                np.load(path+"_goffset.npy"), dtype=tf.float32)
+            self.scale = tf.convert_to_tensor(
+                np.load(path+"_gscale.npy"), dtype=tf.float32)
+        else:
+            self.offset = tf.convert_to_tensor(self.offset, dtype=tf.float32)
+            self.scale = tf.convert_to_tensor(self.scale, dtype=tf.float32)
+
+    def storeWeights(self, path: str = ""):
+        if path:
+            np.save(path+"_goffset.npy", self.offset.numpy())
+            np.save(path+"_gscale.npy", self.scale.numpy())
+
+    def forwardPropagation(self, x):
+        return (x-self.offset)/self.scale
 
 
 class Conv1d:
@@ -607,7 +630,10 @@ class LambdaResnetBlock1d:
             np.save(path+"_brsc.npy", self.weights[2].numpy())
 
     def forwardPropagation(self, x):
-        residual = self.convert_layer.forwardPropagation(x)
+        if self.blkic != self.blkoc:
+            residual = self.convert_layer.forwardPropagation(x)
+        else:
+            residual = x
         for i, branch_layer in enumerate(self.branch_layers):
             x = branch_layer.forwardPropagation(x)
             if self.showMeanStd:
@@ -621,7 +647,8 @@ class LambdaResnetBlock1d:
         return y
 
     def updateWeights(self, grads, args):
-        self.convert_layer.updateWeights(grads[0], args)
+        if self.blkic != self.blkoc:
+            self.convert_layer.updateWeights(grads[0], args)
         for i, branch_layer in enumerate(self.branch_layers):
             branch_layer.updateWeights(grads[1][i], args)
         # branch scale update here
@@ -698,7 +725,10 @@ class LambdaResnetBlock2d:
             np.save(path+"_brsc.npy", self.weights[2].numpy())
 
     def forwardPropagation(self, x):
-        residual = self.convert_layer.forwardPropagation(x)
+        if self.blkic != self.blkoc:
+            residual = self.convert_layer.forwardPropagation(x)
+        else:
+            residual = x
         for i, branch_layer in enumerate(self.branch_layers):
             x = branch_layer.forwardPropagation(x)
             if self.showMeanStd:
@@ -712,7 +742,8 @@ class LambdaResnetBlock2d:
         return y
 
     def updateWeights(self, grads, args):
-        self.convert_layer.updateWeights(grads[0], args)
+        if self.blkic != self.blkoc:
+            self.convert_layer.updateWeights(grads[0], args)
         for i, branch_layer in enumerate(self.branch_layers):
             branch_layer.updateWeights(grads[1][i], args)
         # branch scale update here
@@ -780,11 +811,10 @@ class LambdaResBlk1d:
                 branch_layer.storeWeights(path+"_br"+str(i))
 
     def forwardPropagation(self, x):
-        residual = self.convert_layer.forwardPropagation(x)
-        #if self.blkic != self.blkoc:
-        #    residual = self.convert_layer.forwardPropagation(x)
-        #else:
-        #    residual = x
+        if self.blkic != self.blkoc:
+            residual = self.convert_layer.forwardPropagation(x)
+        else:
+            residual = x
         for i, branch_layer in enumerate(self.branch_layers):
             x = branch_layer.forwardPropagation(x)
             if self.showMeanStd:
@@ -798,7 +828,8 @@ class LambdaResBlk1d:
         return y
 
     def updateWeights(self, grads, args):
-        self.convert_layer.updateWeights(grads[0], args)
+        if self.blkic != self.blkoc:
+            self.convert_layer.updateWeights(grads[0], args)
         for i, branch_layer in enumerate(self.branch_layers):
             branch_layer.updateWeights(grads[1][i], args)
 
@@ -863,11 +894,10 @@ class LambdaResBlk2d:
                 branch_layer.storeWeights(path+"_br"+str(i))
 
     def forwardPropagation(self, x):
-        residual = self.convert_layer.forwardPropagation(x)
-        #if self.blkic != self.blkoc:
-        #    residual = self.convert_layer.forwardPropagation(x)
-        #else:
-        #    residual = x
+        if self.blkic != self.blkoc:
+            residual = self.convert_layer.forwardPropagation(x)
+        else:
+            residual = x
         for i, branch_layer in enumerate(self.branch_layers):
             x = branch_layer.forwardPropagation(x)
             if self.showMeanStd:
@@ -881,13 +911,15 @@ class LambdaResBlk2d:
         return y
 
     def updateWeights(self, grads, args):
-        self.convert_layer.updateWeights(grads[0], args)
+        if self.blkic != self.blkoc:
+            self.convert_layer.updateWeights(grads[0], args)
         for i, branch_layer in enumerate(self.branch_layers):
             branch_layer.updateWeights(grads[1][i], args)
 
 
 class NLambdaResnetBlock12d:
-    def __init__(self, nblocks1d: int, arch1d: list, nblocks2d: int, arch2d: list, output_nchannels: int,
+    def __init__(self, nblocks1d: int, arch1d: list, norm2d_mean: float, norm2d_std: float,
+                 nblocks2d: int, arch2d: list, output_nchannels: int,
                  optimizer: str = "adam_adaclip", debug=False, showMeanStd=False):
         self.blocks1d = []
         for i in range(nblocks1d):
@@ -895,6 +927,7 @@ class NLambdaResnetBlock12d:
                                         optimizer, debug=debug, showMeanStd=showMeanStd)
             self.blocks1d.append(block)
         self.blocks2d = []
+        self.x2dNorm = GlobalNorm(norm2d_mean, norm2d_std)
         for i in range(nblocks2d):
             block = LambdaResnetBlock2d(len(arch2d[i]), arch2d[i], arch2d[-1]["activations"][i],
                                         optimizer, debug=debug, showMeanStd=showMeanStd)
@@ -915,6 +948,7 @@ class NLambdaResnetBlock12d:
             for i, block1d in enumerate(self.blocks1d):
                 block1d.config(path+"_blk1d"+str(i))
                 w1d.append(block1d.weights)
+            self.x2dNorm.config(path+"_gn2d")
             for i, block2d in enumerate(self.blocks2d):
                 block2d.config(path+"_blk2d"+str(i))
                 w2d.append(block2d.weights)
@@ -923,6 +957,7 @@ class NLambdaResnetBlock12d:
             for i, block1d in enumerate(self.blocks1d):
                 block1d.config()
                 w1d.append(block1d.weights)
+            self.x2dNorm.config()
             for i, block2d in enumerate(self.blocks2d):
                 block2d.config()
                 w2d.append(block2d.weights)
@@ -933,6 +968,7 @@ class NLambdaResnetBlock12d:
         if path:
             for i, block1d in enumerate(self.blocks1d):
                 block1d.storeWeights(path+"_blk1d"+str(i))
+            self.x2dNorm.storeWeights(path+"_gn2d")
             for i, block2d in enumerate(self.blocks2d):
                 block2d.storeWeights(path+"_blk2d"+str(i))
             self.outlayer.storeWeights(path+"_output")
@@ -946,6 +982,7 @@ class NLambdaResnetBlock12d:
                       tf.math.reduce_std(x1d).numpy())
         L = x1d.shape[1]
         x1dmat = tf.tile(x1d, [L, 1, 1])[tf.newaxis, ...]
+        x2d = self.x2dNorm.forwardPropagation(x2d)
         x = tf.concat([x2d, x1dmat, tf.transpose(
             x1dmat, [0, 2, 1, 3])], axis=3)
         for i, block2d in enumerate(self.blocks2d):
@@ -953,7 +990,8 @@ class NLambdaResnetBlock12d:
             if self.showMeanStd:
                 print("blk2d"+str(i), tf.math.reduce_mean(x).numpy(),
                       tf.math.reduce_std(x).numpy())
-        y = self.outlayer.forwardPropagation(x)
+        x = self.outlayer.forwardPropagation(x)
+        y = (x+tf.transpose(x))/2
         if self.showMeanStd:
             print("output", tf.math.reduce_mean(y).numpy(),
                   tf.math.reduce_std(y).numpy())
@@ -969,13 +1007,16 @@ class NLambdaResnetBlock12d:
 
 # without branch rescale
 class NLambdaResBlk12d:
-    def __init__(self,  input_nchannels: list, nblocks1d: int, arch1d: list, nblocks2d: int, arch2d: list, output_nchannels: int,
+    def __init__(self,  input_nchannels: list, nblocks1d: int, arch1d: list, norm2d_mean: float, norm2d_std: float,
+                 nblocks2d: int, arch2d: list, output_nchannels: int,
                  optimizer: str = "adam_adaclip", debug=False, showMeanStd=False):
         self.blocks1d = []
         for i in range(nblocks1d):
             block = LambdaResBlk1d(len(arch1d[i]), arch1d[i], arch1d[-1]["activations"][i],
                                    optimizer, debug=debug, showMeanStd=showMeanStd)
             self.blocks1d.append(block)
+
+        self.x2dNorm = GlobalNorm(norm2d_mean, norm2d_std)
         blksic = arch2d[0][0]["dkvhCon"][0] if (
             "K" in arch2d[0][0].keys()) else arch2d[0][0]["io"][0]
         self.inlayers2d = []
@@ -1002,12 +1043,13 @@ class NLambdaResBlk12d:
         if path:
             if path[-1] != "/":
                 path += "/"
-            for i, layer in enumerate(self.inlayers2d):
-                layer.config(path+"_in"+str(i))
-                win.append(layer.weights)
             for i, block1d in enumerate(self.blocks1d):
                 block1d.config(path+"_blk1d"+str(i))
                 w1d.append(block1d.weights)
+            self.x2dNorm.config(path+"_gn2d")
+            for i, layer in enumerate(self.inlayers2d):
+                layer.config(path+"_in"+str(i))
+                win.append(layer.weights)
             for i, block2d in enumerate(self.blocks2d):
                 block2d.config(path+"_blk2d"+str(i))
                 w2d.append(block2d.weights)
@@ -1015,12 +1057,13 @@ class NLambdaResBlk12d:
                 layer.config(path+"_out"+str(i))
                 wout.append(layer.weights)
         else:
-            for i, layer in enumerate(self.inlayers2d):
-                layer.config()
-                win.append(layer.weights)
             for i, block1d in enumerate(self.blocks1d):
                 block1d.config()
                 w1d.append(block1d.weights)
+            self.x2dNorm.config()
+            for i, layer in enumerate(self.inlayers2d):
+                layer.config()
+                win.append(layer.weights)
             for i, block2d in enumerate(self.blocks2d):
                 block2d.config()
                 w2d.append(block2d.weights)
@@ -1031,10 +1074,11 @@ class NLambdaResBlk12d:
 
     def storeWeights(self, path: str = ""):
         if path:
-            for i, layer in enumerate(self.inlayers2d):
-                layer.storeWeights(path+"_in"+str(i))
             for i, block1d in enumerate(self.blocks1d):
                 block1d.storeWeights(path+"_blk1d"+str(i))
+            self.x2dNorm.storeWeights(path+"_gn2d")
+            for i, layer in enumerate(self.inlayers2d):
+                layer.storeWeights(path+"_in"+str(i))
             for i, block2d in enumerate(self.blocks2d):
                 block2d.storeWeights(path+"_blk2d"+str(i))
             for i, layer in enumerate(self.outlayers2d):
@@ -1049,6 +1093,7 @@ class NLambdaResBlk12d:
                       tf.math.reduce_std(x1d).numpy())
         L = x1d.shape[1]
         x1dmat = tf.tile(x1d, [L, 1, 1])[tf.newaxis, ...]
+        x2d = self.x2dNorm.forwardPropagation(x2d)
         x = tf.concat([x2d, x1dmat, tf.transpose(
             x1dmat, [0, 2, 1, 3])], axis=3)
         for i, layer in enumerate(self.inlayers2d):
@@ -1060,7 +1105,7 @@ class NLambdaResBlk12d:
                       tf.math.reduce_std(x).numpy())
         for i, layer in enumerate(self.outlayers2d):
             x = layer.forwardPropagation(x)
-        y = x
+        y = (x+tf.transpose(x))/2
         if self.showMeanStd:
             print("output", tf.math.reduce_mean(y).numpy(),
                   tf.math.reduce_std(y).numpy())

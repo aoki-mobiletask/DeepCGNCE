@@ -1,16 +1,16 @@
 # data io control
 inFeatureDirLocal = "../cgFeatures/"
 inLabelDirLocal = "../cgLabels/"
-inFeatureDirRemote = ""
-inLabelDirRemote = ""
+inFeatureDirRemote = "/bbfs/fsa/home/ww_huanghy/workspace/SCOPe2.08/cgFeatures/"
+inLabelDirRemote = "/bbfs/fsa/home/ww_huanghy/workspace/SCOPe2.08/cgLabels/"
 prolist = "list2"
 
 # training control
 isDebugging: bool = False
 showMeanStd: bool = False
 doShowModelSize: bool = True
-doLoadParams: bool = True
-doTrain: bool = False
+doLoadParams: bool = False
+doTrain: bool = True
 doEvaluate: bool = False
 nVisualization: int = 3
 paramSavePath: str = "cp"
@@ -18,13 +18,13 @@ historySavePath: str = "history"
 filmSavePath: str = "film"
 
 # training hyperparams
-nepochs = 100
-patience = 20
+nepochs = 500
+patience = 60
 lr: list = [1e-2, 1e-3, 20]
-batch_size: list = [1, 64]
+batch_size: list = [1, 16]
 moment: list = [0.9, 0.99, 0.01]
 clip_grad = 1e16
-clip_lambda = 0.02
+clip_lambda = 0.01
 optimizer = "adam_adaclip"
 verbose = 1
 visualization_clip = [-10., 0.]

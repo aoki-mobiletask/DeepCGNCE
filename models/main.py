@@ -16,7 +16,6 @@ x1d = []
 x2d = []
 y = []
 
-mean, meansquare, eleCount = 0., 0., 0
 for i, line in enumerate(lines):
     line = line[:line.find("_min")]
     onehot = np.load(IN_FEATUREDIR+line+"_caOneHot.npy")
@@ -27,18 +26,10 @@ for i, line in enumerate(lines):
     dismat = np.load(IN_FEATUREDIR+line+"_caDisMat.npy")
     L = dismat.shape[1]
     f2dmat = dismat[:, :, :, 0]
-    mean = np.sum(f2dmat)/(eleCount+L**2)+mean*(eleCount/(eleCount+L**2))
-    meansquare = np.sum(f2dmat**2)/(eleCount+L**2) + \
-        meansquare*(eleCount/(eleCount+L**2))
-    eleCount += L**2
     x2d.append(tf.convert_to_tensor(f2dmat[np.newaxis, ...], dtype=tf.float32))
 
     econ = np.load(IN_LABELDIR+line+"_caEcon.npy")
     y.append(tf.convert_to_tensor(econ[np.newaxis, :], dtype=tf.float32))
-
-stddev = np.math.sqrt(meansquare-mean**2)
-for i in range(len(x2d)):
-    x2d[i] = (x2d[i]-mean)/stddev
 
 SEED = 10
 np.random.seed(SEED)
@@ -57,8 +48,17 @@ x2d_train, x2d_valid, x2d_test = x2d[:
                                      trVBound], x2d[trVBound:vTeBound], x2d[vTeBound:]
 y_train, y_valid, y_test = y[:trVBound], y[trVBound:vTeBound], y[vTeBound:]
 
+mean, meansquare, eleCount = 0., 0., 0
+for f2d in x2d_train+x2d_valid:
+    mean = np.sum(f2dmat)/(eleCount+L**2)+mean*(eleCount/(eleCount+L**2))
+    meansquare = np.sum(f2dmat**2)/(eleCount+L**2) + \
+        meansquare*(eleCount/(eleCount+L**2))
+    eleCount += L**2
+stddev = np.math.sqrt(meansquare-mean**2)
+
 # training
-model = model.Model(input_nchannels, nblocks1d, arch1d, nblocks2d,  arch2d, output_nchannels,
+model = model.Model(input_nchannels, nblocks1d, arch1d, mean, stddev,
+                    nblocks2d,  arch2d, output_nchannels,
                     optimizer, isDebugging, showMeanStd,
                     nepochs, patience, lr, batch_size,
                     moment, clip_grad, clip_lambda, verbose)
@@ -76,6 +76,7 @@ if doTrain:
     np.random.seed(int(time.time()))
     iProFilm = np.random.randint(len(y_valid))
     sProFilm = lines[len(y_train)+iProFilm]
+    sProFilm = sProFilm[:sProFilm.find("_min")]
     model.fit((x1d_train, x2d_train, y_train), (x1d_valid, x2d_valid, y_valid),
               saveParamTo=paramSavePath, saveHistoryTo=historySavePath,
               saveFilmsTo=filmSavePath, iProFilm=iProFilm, sProFilm=sProFilm)

@@ -10,11 +10,13 @@ import time
 
 
 class Model(layers.NLambdaResBlk12d):
-    def __init__(self, input_nchannels: int, nblocks1d: int, arch1d: list, nblocks2d: int, arch2d: list, output_nchannels: int,
+    def __init__(self, input_nchannels: int, nblocks1d: int, arch1d: list, norm2d_mean: float, norm2d_std: float,
+                 nblocks2d: int, arch2d: list, output_nchannels: int,
                  optimizer: str = "adam_adaclip", debug: bool = False, showMeanStd: bool = False,
                  nepochs=500, patience=60, lr: list = [1e-3, 1e-2, 20], batch_size: list = [1, 512],
                  moment: list = [0.9, 0.999, 0.1], clip_grad=1e16, clip_lambda=0.01, verbose=1):
-        super(Model, self).__init__(input_nchannels, nblocks1d, arch1d, nblocks2d, arch2d, output_nchannels,
+        super(Model, self).__init__(input_nchannels, nblocks1d, arch1d, norm2d_mean, norm2d_std,
+                                    nblocks2d, arch2d, output_nchannels,
                                     optimizer, debug=debug, showMeanStd=showMeanStd)
         self.epochs = nepochs
         # early stopping patience, negative means no early stopping
@@ -89,6 +91,8 @@ class Model(layers.NLambdaResBlk12d):
                     train_lossBatch /= ((istep-1) % batch_size+1)
                 ibatch += 1
                 grads = tape.gradient(train_lossBatch, self.weights)
+                if self.debug:
+                    print(grads)
                 if self.debug:
                     print(self.weights[0][0])
                     print(grads[0][0])
