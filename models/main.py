@@ -24,7 +24,6 @@ for i, line in enumerate(lines):
     x1d.append(f1d)
 
     dismat = np.load(IN_FEATUREDIR+line+"_caDisMat.npy")
-    L = dismat.shape[1]
     f2dmat = dismat[:, :, :, 0]
     x2d.append(tf.convert_to_tensor(f2dmat[np.newaxis, ...], dtype=tf.float32))
 
@@ -50,6 +49,8 @@ y_train, y_valid, y_test = y[:trVBound], y[trVBound:vTeBound], y[vTeBound:]
 
 mean, meansquare, eleCount = 0., 0., 0
 for f2d in x2d_train+x2d_valid:
+    f2dmat = f2d[0,:,:,0]
+    L = f2dmat.shape[0]
     mean = np.sum(f2dmat)/(eleCount+L**2)+mean*(eleCount/(eleCount+L**2))
     meansquare = np.sum(f2dmat**2)/(eleCount+L**2) + \
         meansquare*(eleCount/(eleCount+L**2))
