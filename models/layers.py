@@ -1007,7 +1007,7 @@ class NLambdaResnetBlock12d:
 
 # without branch rescale
 class NLambdaResBlk12d:
-    def __init__(self,  input_nchannels: list, nblocks1d: int, arch1d: list, norm2d_mean: float, norm2d_std: float,
+    def __init__(self,  input_nchannels: list, nblocks1d: int, arch1d: list, 
                  nblocks2d: int, arch2d: list, output_nchannels: int,
                  optimizer: str = "adam_adaclip", debug=False, showMeanStd=False):
         self.blocks1d = []
@@ -1016,7 +1016,6 @@ class NLambdaResBlk12d:
                                    optimizer, debug=debug, showMeanStd=showMeanStd)
             self.blocks1d.append(block)
 
-        self.x2dNorm = GlobalNorm(norm2d_mean, norm2d_std)
         blksic = arch2d[0][0]["dkvhCon"][0] if (
             "K" in arch2d[0][0].keys()) else arch2d[0][0]["io"][0]
         self.inlayers2d = []
@@ -1046,7 +1045,6 @@ class NLambdaResBlk12d:
             for i, block1d in enumerate(self.blocks1d):
                 block1d.config(path+"_blk1d"+str(i))
                 w1d.append(block1d.weights)
-            self.x2dNorm.config(path+"_gn2d")
             for i, layer in enumerate(self.inlayers2d):
                 layer.config(path+"_in"+str(i))
                 win.append(layer.weights)
@@ -1060,7 +1058,6 @@ class NLambdaResBlk12d:
             for i, block1d in enumerate(self.blocks1d):
                 block1d.config()
                 w1d.append(block1d.weights)
-            self.x2dNorm.config()
             for i, layer in enumerate(self.inlayers2d):
                 layer.config()
                 win.append(layer.weights)
@@ -1076,7 +1073,6 @@ class NLambdaResBlk12d:
         if path:
             for i, block1d in enumerate(self.blocks1d):
                 block1d.storeWeights(path+"_blk1d"+str(i))
-            self.x2dNorm.storeWeights(path+"_gn2d")
             for i, layer in enumerate(self.inlayers2d):
                 layer.storeWeights(path+"_in"+str(i))
             for i, block2d in enumerate(self.blocks2d):
@@ -1093,7 +1089,6 @@ class NLambdaResBlk12d:
                       tf.math.reduce_std(x1d).numpy())
         L = x1d.shape[1]
         x1dmat = tf.tile(x1d, [L, 1, 1])[tf.newaxis, ...]
-        x2d = self.x2dNorm.forwardPropagation(x2d)
         x = tf.concat([x2d, x1dmat, tf.transpose(
             x1dmat, [0, 2, 1, 3])], axis=3)
         for i, layer in enumerate(self.inlayers2d):
