@@ -30,6 +30,19 @@ for i, line in enumerate(lines):
     econ = np.load(IN_LABELDIR+line+"_caEcon.npy")
     y.append(tf.convert_to_tensor(econ[np.newaxis, :], dtype=tf.float32))
 
+mean, meansquare, eleCount = 0., 0., 0
+for f2d in x2d:
+    f2dmat = f2d[0,:,:,0]
+    L = f2dmat.shape[0]
+    mean = np.sum(f2dmat)/(eleCount+L**2)+mean*(eleCount/(eleCount+L**2))
+    meansquare = np.sum(f2dmat**2)/(eleCount+L**2) + \
+        meansquare*(eleCount/(eleCount+L**2))
+    eleCount += L**2
+stddev = np.math.sqrt(meansquare-mean**2)
+
+for i in range(len(x2d)):
+    x2d[i] = (x2d[i]-mean)/stddev
+    
 SEED = 10
 np.random.seed(SEED)
 np.random.shuffle(lines)
@@ -46,16 +59,6 @@ x1d_train, x1d_valid, x1d_test = x1d[:
 x2d_train, x2d_valid, x2d_test = x2d[:
                                      trVBound], x2d[trVBound:vTeBound], x2d[vTeBound:]
 y_train, y_valid, y_test = y[:trVBound], y[trVBound:vTeBound], y[vTeBound:]
-
-mean, meansquare, eleCount = 0., 0., 0
-for f2d in x2d_train+x2d_valid:
-    f2dmat = f2d[0,:,:,0]
-    L = f2dmat.shape[0]
-    mean = np.sum(f2dmat)/(eleCount+L**2)+mean*(eleCount/(eleCount+L**2))
-    meansquare = np.sum(f2dmat**2)/(eleCount+L**2) + \
-        meansquare*(eleCount/(eleCount+L**2))
-    eleCount += L**2
-stddev = np.math.sqrt(meansquare-mean**2)
 
 # training
 model = model.Model(input_nchannels, nblocks1d, arch1d, mean, stddev,
